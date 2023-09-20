@@ -8,6 +8,8 @@ public class Practice001 {
         Connection connection = DriverManager.getConnection(url, user, password);
         Statement statement = connection.createStatement();
         ResultSet resultSet1 = statement.executeQuery("SELECT * FROM talebeler");
+        // Task01-> talebeler table'daki record'ları listeleyen code create ediniz
+        // String query="select * from talebeler";
         System.out.println("   ***   task01   ***   ");
         while(resultSet1.next()){
             System.out.printf("%-6d   %-20.20s  %-8s %-6d\n",resultSet1.getInt(1),resultSet1.getString(2),
