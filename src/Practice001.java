@@ -15,7 +15,7 @@ public class Practice001 {
         }
 
         System.out.println("   ***   task02   ***   ");
-        ResultSet resultSet2 = statement.executeQuery("SELECT * FROM talebeler where yazili_notu");
+        ResultSet resultSet2 = statement.executeQuery("SELECT * FROM talebeler where yazili_notu>90");
         while(resultSet2.next()){
             System.out.printf("%-6d   %-20.20s  %-8s %-6d\n",resultSet2.getInt(1),resultSet2.getString(2),
                     resultSet2.getString(3),resultSet2.getInt(4));
