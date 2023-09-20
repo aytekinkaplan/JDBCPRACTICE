@@ -15,7 +15,7 @@ public class Practice001 {
             System.out.printf("%-6d   %-20.20s  %-8s %-6d\n",resultSet1.getInt(1),resultSet1.getString(2),
                     resultSet1.getString(3),resultSet1.getInt(4));
         }
-
+        // Task02-> talebeler table'daki notları 90 dan yuksek olan record'ları listeleyen code create ediniz
         System.out.println("   ***   task02   ***   ");
         ResultSet resultSet2 = statement.executeQuery("SELECT * FROM talebeler where yazili_notu>90");
         while(resultSet2.next()){
